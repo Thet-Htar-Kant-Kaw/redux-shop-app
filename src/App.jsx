@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductListing from "./containers/ProductListing";
 import ProductDetails from "./containers/ProductDetails";
 import Header from "./containers/Header";
+import './App.css'
 
 export default function App() {
     return (

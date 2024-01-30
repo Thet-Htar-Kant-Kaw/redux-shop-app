@@ -27,32 +27,46 @@ const ProductDetails= ()=> {
     },[productId])
 
     return (
-        <div className="">
+        <div className="details">
           {Object.keys(product).length === 0 ? (
             <div>...Loading</div>
           ) : (
-            <div className="">
-              <div className="">
-                <div className="">AND</div>
-                <div className="">
-                  <div className="">
-                    <img className="" src={image} />
-                  </div>
-                  <div className="">
-                    <h1>{title}</h1>
-                    <h2>
-                      <a className="">${price}</a>
-                    </h2>
-                    <h3 className="">{category}</h3>
-                    <p>{description}</p>
-                    <div className="">
-                      <div className="">
-                        <i className=""></i>
-                      </div>
-                      <div className="">Add to Cart</div>
-                    </div>
-                  </div>
-                </div>
+            // <div className="">
+            //   <div className="">
+            //     <div className="">AND</div>
+            //     <div className="">
+            //       <div className="">
+            //         <img className="" src={image} />
+            //       </div>
+            //       <div className="">
+            //         <h1>{title}</h1>
+            //         <h2>
+            //           <a className="">${price}</a>
+            //         </h2>
+            //         <h3 className="">{category}</h3>
+            //         <p>{description}</p>
+            //         <div className="">
+            //           <div className="">
+            //             <i className=""></i>
+            //           </div>
+            //           <div className="">Add to Cart</div>
+            //         </div>
+            //       </div>
+            //     </div>
+            //   </div>
+            // </div>
+
+            <div className="card">
+              <div className="image">
+                <img src={image} />
+              </div>
+              <div className="desc">
+                <h1>{title}</h1>
+                <h2>
+                  <a className="">${price}</a>
+                </h2>
+                <h3 className="">{category}</h3>
+                <p>{description}</p>
               </div>
             </div>
           )}
